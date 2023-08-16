@@ -1,0 +1,13 @@
+package com.cydeo.spring10thymeleaf;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class Spring10ThymeleafApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
