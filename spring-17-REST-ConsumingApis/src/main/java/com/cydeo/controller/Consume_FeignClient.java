@@ -19,14 +19,16 @@ public class Consume_FeignClient {
     }
 
     @GetMapping("/api/v1/users")
-    public ResponseEntity<ResponseWrapper> getUsers() {
+    public ResponseEntity<ResponseWrapper> getUsers(){
 
-        return ResponseEntity.ok(new ResponseWrapper("UserList Retrieved", userClient.getUsers()));
+        return ResponseEntity.ok(new ResponseWrapper("UserList Retrieved",userClient.getUsers()));
     }
 
-    @GetMapping("/data/v1/employee")
+    @GetMapping("/api/v1/employee")
     public ResponseEntity<ResponseWrapper> getEmployee(){
-        return ResponseEntity.ok(new ResponseWrapper("EmployeeList Retrieved",employeeClient.getEmployee("6298ebfecd0551211fce37a6")));
+
+        return ResponseEntity.ok(new ResponseWrapper("Employee retrieved",employeeClient.getEmployee("6298ebfecd0551211fce37a6")));
+
     }
 
 
