@@ -15,7 +15,8 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
-public class AddressServiceImpl implements AddressService {
+public class
+AddressServiceImpl implements AddressService {
 
     private final AddressRepository addressRepository;
     private final MapperUtil mapperUtil;
