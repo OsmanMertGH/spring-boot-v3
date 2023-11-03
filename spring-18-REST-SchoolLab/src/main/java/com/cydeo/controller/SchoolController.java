@@ -53,4 +53,11 @@ public class SchoolController {
         AddressDTO addressDTO = addressService.findById(id);
         return ResponseEntity.ok(new ResponseWrapper("Adress is succesfully retrieved", addressDTO));
     }
+
+    @PutMapping("/address/{id}")
+    public AddressDTO updateAddress(@PathVariable("id") Long id, @RequestBody AddressDTO addressDTO) throws Exception {
+        addressDTO.setId(id);
+        return addressService.update(addressDTO);
+
+    }
 }
