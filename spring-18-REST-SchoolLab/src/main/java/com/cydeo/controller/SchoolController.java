@@ -39,7 +39,7 @@ public class SchoolController {
     @GetMapping("/students")
     public ResponseEntity<ResponseWrapper> readAllStudents() {
 
-        return ResponseEntity.ok(new ResponseWrapper("Students are successfully retrieved", studentService.findAll()));
+            return ResponseEntity.ok(new ResponseWrapper("Students are successfully retrieved", studentService.findAll()));
     }
 
     @GetMapping("/parents")
